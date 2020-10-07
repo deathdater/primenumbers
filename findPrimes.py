@@ -49,6 +49,11 @@ def checkPrimeWithin(number):
             number -= 1
     return prime_list
 
+def generate_fibbonacci():
+    num=0
+    while True:
+        num=int(num)+int(num+1)
+        print ('{0}\n'.format(num))
 
 
 

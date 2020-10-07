@@ -1,3 +1,3 @@
 import findPrimes as fp
 
-print(fp.checkPrimeWithin(100))
+print(fp.checkPrimeWithin(100.01))

@@ -16,15 +16,18 @@ def checkPrime(num):
 
 
 def checkPrimeWithin(number):
-    prime_list = []
-    while number > 0:
-        if (checkPrime(number) != 0):
-            prime_list.append(number)
-            # print(prime_list)
-            number -= 1
-        else:
-            number -= 1
-    return prime_list
+    if number>0 and number.is_integer():
+        prime_list = []
+        while number > 0:
+            if (checkPrime(number) != 0):
+                prime_list.append(number)
+                # print(prime_list)
+                number -= 1
+            else:
+                number -= 1
+        return prime_list
+    else:
+        print("Invalid Number, please provide an positive integer value!")
 
 
 

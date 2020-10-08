@@ -49,14 +49,16 @@ def checkPrimeWithin(number):
             number -= 1
     return prime_list
 
-def generate_fibbonacci():
-    num=0
-    while True:
-        num=int(num)+int(num+1)
-        print ('{0}\n'.format(num))
+def generate_fibbonacci(iteration_num):
+    fibb=[0,1,1]
+    while len(fibb)-3 < iteration_num:
+        fibb.append(fibb[len(fibb)-1]+fibb[len(fibb)-2])
+        # print ('{0} \n'.format(fibb[len(fibb)-1]))
+    return fibb
 
 
-
-
+def fibbonacci_nth_number(n):
+    fibb_list=generate_fibbonacci(n)
+    return fibb_list[n]
 
 
